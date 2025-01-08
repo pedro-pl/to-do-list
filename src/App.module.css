@@ -1,0 +1,51 @@
+.new-task {
+    width: 46rem;
+    height: 3.375rem;
+    display: flex;
+    justify-content: space-between;
+    margin: -1.8rem auto 0 auto;
+    gap: 0.5rem;
+}
+
+.new-task textarea {
+    width:85%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: var(--gray-500);
+    padding: 1rem;
+    color: var(--gray-100);
+    resize: none;
+}
+
+.new-task button {
+    width: 15%;
+    height: 100%;
+    outline: none;
+    background: var(--blue-dark);
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: .2s;
+}
+
+.new-task button[type=submit]:disabled {
+    cursor: not-allowed;
+}
+
+.new-task button[type=submit]:disabled:hover{
+    background: var(--blue-dark);
+}
+
+.new-task button:hover {
+    background: var(--blue);
+    transition: .2s;
+}

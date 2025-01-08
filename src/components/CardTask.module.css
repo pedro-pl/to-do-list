@@ -1,0 +1,98 @@
+.card {
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 8px;
+    background: var(--gray-500);
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--gray-400);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.taskInfo {
+    width: 80%;
+    color: var(--gray-100);
+    display: flex;
+    gap: 1rem;
+}
+
+.tasktext {
+    font-weight: bold;
+    user-select: none;
+}
+
+.task-text-checked {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskInfo input {
+    display: none;
+}
+
+.checkbox {
+    outline: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.checkbox-unchecked {
+    border: 1px solid var(--blue);
+    background-color: transparent;
+}
+
+.checkbox-unchecked svg {
+    display: none;
+}
+
+.checkbox-unchecked:hover {
+    background-color: var(--blue-dark);
+}
+
+.checkbox-checked {
+    border: 1px solid var(--purple-dark);
+    background-color: var(--purple-dark);
+}
+
+.checkbox-checked:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+}
+
+.checkbox svg {
+    color: var(--gray-100);
+}
+
+.delete {
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.delete:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+}
+
+.delete svg {
+    color: var(--gray-300);
+}
+
+.delete:hover svg {
+    color: var(--danger);
+}
